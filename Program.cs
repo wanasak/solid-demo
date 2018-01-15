@@ -6,7 +6,10 @@ namespace solid_demo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var empJohn = new Employee(1, "John", "Permanent");
+            var empJason = new Employee(1, "Jason", "Temp");
+
+            Console.WriteLine(string.Format("Employee {0} Bonus {1}", empJohn.ToString(), empJohn.CalculateBonus(10000).ToString()));
         }
     }
 }
