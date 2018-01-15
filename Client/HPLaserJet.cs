@@ -2,7 +2,7 @@ using System;
 
 namespace solid_demo.Client
 {
-    public class HPLaserJet : IPrintTask
+    public class HPLaserJet : IPrintTask, IFaxContent, IPrintDuplex
     {
         public bool FaxContent(string content)
         {
